@@ -64,7 +64,7 @@ exports.findOne = (req, res) => {
   
 };
 
-// Update a Customer identified by the customerId in the request
+// Update a Customer identified by the customerId in the request 
 exports.update = (req, res) => {
 	
 	// Validate Request
@@ -76,7 +76,7 @@ exports.update = (req, res) => {
 	 
 	 Customer.updateById(
 		req.params.customerId,
-		new Customer(req.body),
+		new Customer(req.body), 
 		(err, data) => {
 		  if (err) {
 			if (err.kind === "not_found") {
