@@ -1,6 +1,6 @@
 const sql = require("./db.js");
 
-// constructor
+//Constructor
 const Customer = function(customer) {
   this.email = customer.email;
   this.name = customer.name;
